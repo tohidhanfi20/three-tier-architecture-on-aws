@@ -1,2 +1,2 @@
-# three-tier-architecture-on-aws
+# Three-tier-architecture-on-aws
 three-tier-architecture-on-aws
