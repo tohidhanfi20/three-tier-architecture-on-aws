@@ -1,0 +1,86 @@
+Follow the steps from this doc https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html
+
+
+To prepare the LAMP server
+Connect to your instance.
+
+To ensure that all of your software packages are up to date, perform a quick software update on your instance. This process may take a few minutes, but it is important to make sure that you have the latest security updates and bug fixes.
+
+The -y option installs the updates without asking for confirmation. If you would like to examine the updates before installing, you can omit this option.
+
+
+==> sudo yum update -y
+
+
+2 Install the lamp-mariadb10.2-php7.2 and php7.2 Amazon Linux Extras repositories to get the latest versions of the LAMP MariaDB and PHP packages for Amazon Linux 2.
+
+==> sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+
+3 Install the apache web server
+
+==> sudo yum install -y httpd
+
+4 Start the apache server
+
+==> Sudo systemctl start httpd
+
+5 Enable apache server
+
+==> sudo systemctl enable httpd
+
+6 Confirm Of it has been enabled
+
+==> sudo systemctl is-enabled httpd
+
+7 Use the command below to confirm if https service is running
+
+==> curl http://localhost
+
+8 Add your user i.e ec2 user to the apache group
+
+==> sudo usermod -a -G apache ec2-user
+
+9 log out to verify your memebership to the apache group, reconnect to your instance
+
+10 Change the group ownership pf /var/www and its contents to the apache group
+
+==>sudo chown -R ec2-user:apache /var/www
+
+11 To add group write permissions and to set the group ID on future subdirectories, change the directory permissions of /var/www and its subdirectories.
+
+==>sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
+
+12 To add group write permissions, recursively change the file permissions of /var/www and its subdirectories:
+
+==> find /var/www -type f -exec sudo chmod 0664 {} \;
+
+13 Install PhP Admin 
+we will be using phpmyadmin as a simple web application
+
+14 install the required dependencies.
+
+==> sudo yum install php-mbstring php-xml -y
+
+15 Restart Apache.
+
+==>sudo systemctl restart httpd
+
+16 Restart php-fpm.
+
+==> sudo systemctl restart php-fpm
+
+17 Navigate to the Apache document root at /var/www/html.
+
+==> cd /var/www/html
+
+18 Select a source package for the latest phpMyAdmin release from
+
+==> wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.tar.gz
+
+19 Once the packageis downloaded create a directory. Create a phpmyadmin folder and extract the packageinto it with the following command
+
+==> mkdir phpMyAdmin && tar -xvzf phpMyAdmin-latest-all-languages.tar.gz -C phpMyAdmin --strip-components 1
+
+20 then remove phpmyadmin tar files withthe command below
+
+==> rm phpMyAdmin-latest-all-languages.tar.gz
