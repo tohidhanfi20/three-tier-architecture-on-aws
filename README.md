@@ -84,7 +84,7 @@ Database Tier Subnets
            +Availabilty Zones = ap-south-1c
            +IP CIDR = 10.0.8.0/24
 
-<img width="1200" height="300" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/All%20Subnets.png>       
+<img width="1200" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/All%20Subnets.png>       
 
 Step 4 - Go to Subnets settings and Enable auto assign IPv4 address          
 
