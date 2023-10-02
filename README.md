@@ -119,6 +119,7 @@ Step 8 - Associate Public RT with all public subnets
 
 Step 9 - Now Edit Private-app Route Table with NAT-GW-AZ1
 
+
 Step 10 -  Now Edit Private-db Route Table with NAT-GW-AZ1
 
 
