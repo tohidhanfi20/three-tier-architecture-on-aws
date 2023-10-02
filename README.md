@@ -38,10 +38,66 @@ Step 2 - To Create Internet Gateway
          + Attach IGW with Your VPC(MyVpc)
          
 Step 3 - To Create Subnets (9)
-       - Web Tier Subnets
 
+ Web Tier Subnets
+ 
            +Name = Public-subnet-AZ1
            +Availability Zones = ap-south-1a
            +IP CIDR = 10.0.0.0/24
 
-           +
+           +Name = Public-subnet-AZ2
+           +Availabilty Zones = ap-south-1b
+           +IP CIDR = 10.0.1.0/24
+
+           +Name = Public-subnet-AZ3
+           +Availability Zones = ap-south-1c
+           +IP CIDR = 10.0.2.0/24
+           
+Application Tier Subnets
+
+           +Name = app-subnet-AZ1
+           +Availabilty Zones = ap-south-1a
+           +IP CIDR = 10.0.3.0/24
+
+           +Name = app-subnet-AZ2
+           +Availabilty Zones = ap-south-1b
+           +IP CIDR = 10.0.4.0/24
+           
+            +Name = app-subnet-AZ3
+           +Availabilty Zones = ap-south-1c
+           +IP CIDR = 10.0.5.0/24
+           
+Database Tier Subnets
+
+           +Name = Private-db-subnet-AZ1
+           +Availabilty Zones = ap-south-1a
+           +IP CIDR = 10.0.6.0/24
+
+           +Name = Private-db-subnet-AZ2
+           +Availabilty Zones = ap-south-1b
+           +IP CIDR = 10.0.7.0/24
+           
+            +Name = Private-db-subnet-AZ3
+           +Availabilty Zones = ap-south-1c
+           +IP CIDR = 10.0.8.0/24
+
+Step 4 - Go to Subnets settings and Enable auto assign IPv4 address          
+
+           
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
