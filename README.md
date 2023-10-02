@@ -30,7 +30,7 @@ Step 1 - To Create our own VPC
         + Create VPC
         + Edit VPC Settings
         + Enable DNS Hostname
-        <img Width="1600" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Screenshot's/My%20VPC.png>
+<img Width="1600" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Screenshot's/My%20VPC.png>
         
 Step 2 - To Create Internet Gateway
 
