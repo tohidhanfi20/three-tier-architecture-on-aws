@@ -24,7 +24,19 @@ Lets Paint a Scenario
 # Lets Start Our Project 
 
 Step 1 - To Create our own VPC
-        + Name your vpc i have named it (MyVpc)
         
-        +
+        + Name your vpc i have named it (MyVpc)
+        + IPv4 CIDR - 10.0.0.0/16
+        + Create VPC
+        + Edit VPC Settings
+        + Enable DNS Hostname
+        
+Step 2 - To Create Internet Gateway
 
+         + Name IGW
+         + Create IGW
+         + Attach IGW with Your VPC(MyVpc)
+         
+Step 3 - To Create Subnets (9)
+         
+         + 
