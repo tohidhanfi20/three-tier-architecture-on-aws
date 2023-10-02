@@ -38,5 +38,10 @@ Step 2 - To Create Internet Gateway
          + Attach IGW with Your VPC(MyVpc)
          
 Step 3 - To Create Subnets (9)
-         
-         + 
+       - Web Tier Subnets
+
+           +Name = Public-subnet-AZ1
+           +Availability Zones = ap-south-1a
+           +IP CIDR = 10.0.0.0/24
+
+           +
