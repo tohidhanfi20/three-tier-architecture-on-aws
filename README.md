@@ -38,7 +38,7 @@ Step 2 - To Create Internet Gateway
          + Name IGW
          + Create IGW
          + Attach IGW with Your VPC(MyVpc)
-<img width="1200" height="200" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/NAT%20GTW.png>         
+<img width="1200" height="100" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/NAT%20GTW.png>         
          
 Step 3 - To Create Subnets (9)
 
@@ -84,7 +84,7 @@ Database Tier Subnets
            +Availabilty Zones = ap-south-1c
            +IP CIDR = 10.0.8.0/24
 
-<img width="1200" height="200" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/NAT%20GTW.png>       
+<img width="1200" height="100" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/NAT%20GTW.png>       
 
 Step 4 - Go to Subnets settings and Enable auto assign IPv4 address          
 
