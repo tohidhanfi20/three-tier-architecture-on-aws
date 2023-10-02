@@ -15,6 +15,6 @@ Lets Paint a Scenario
 # Tier 3 = Data Tier
 <img width="1200" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/Data%20Tier.png>
 
-#3 Tier Architecture Diagram
+# 3 Tier Architecture Diagram
 <img width="1200" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/3%20Tier%20Architecture.png>
 
