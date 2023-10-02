@@ -86,8 +86,40 @@ Database Tier Subnets
 
 <img width="1400" height="600" src=https://github.com/tohidhanfi20/three-tier-architecture-on-aws/blob/main/Images/All%20Subnets.png>       
 
-Step 4 - Go to Subnets settings and Enable auto assign IPv4 address          
+Step 4 - Go to Subnets settings and Enable auto assign IPv4 address in all public subnets          
 
+Step 5 - To create a Route tables
+         
+         <Public-RT>
+         <Private-app-RT>
+         <Private-db-RT>
+         
+Step 6 - To Create a NAT Gateway
+
+         +Name - Nat-GTW-AZ1
+         +Subnet - AZ1
+         +Connection Type - Public
+         +Allocate an Elastic IP
+         +Create NAT-GW
+Step 7 - To Associate Public Route Table to IGW
+
+         +Go to Public-RT
+         +Edit Association
+         +Edit Routes
+         +Add routes
+         +Destination Anywhere (0.0.0.0/0)
+         +Target - MyIGW 
+         +Save Changes
+Step 8 - 
+         
+
+
+
+
+
+
+
+         
            
 
 
