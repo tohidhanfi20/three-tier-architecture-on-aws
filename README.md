@@ -114,7 +114,7 @@ Step 7 - To Edit Public Route Table with IGW
          
 Step 8 - Associate Public RT with all public subnets
 
- Likewise do same for Private-app-RT and Priavte-db-RT
+ Likewise do same for Private-app-RT and Private-db-RT
 
 Step 9 -          
 
