@@ -101,7 +101,8 @@ Step 6 - To Create a NAT Gateway
          +Connection Type - Public
          +Allocate an Elastic IP
          +Create NAT-GW
-Step 7 - To Associate Public Route Table to IGW
+         
+Step 7 - To Edit Public Route Table with IGW
 
          +Go to Public-RT
          +Edit Association
@@ -110,7 +111,13 @@ Step 7 - To Associate Public Route Table to IGW
          +Destination Anywhere (0.0.0.0/0)
          +Target - MyIGW 
          +Save Changes
-Step 8 - 
+         
+Step 8 - Associate Public RT with all public subnets
+         Likewise do same for Private-app-RT and Priavte-db-RT
+
+Step 9 -          
+
+
          
 
 
